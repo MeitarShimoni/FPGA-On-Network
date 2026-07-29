@@ -86,6 +86,13 @@ anything else on the project:
 | Still no reply after ARP fix | Traced `ethernet_mac.sv`'s TX path outside this repo and found it replies with a **hardcoded destination MAC** and **EtherType `0x88B5`**, not IP/UDP | Rewrote the receive side of the test scripts to do a raw Scapy/Npcap sniff filtered on source MAC + EtherType instead of a UDP socket |
 | RX pipeline **stalling mid-image** on some runs (seen on the seven-segment pixel counter) | Read the full RX chain (`eth_frame_rx` → `mac_filter` → `eth_packet_fifo` → `eth_udp_payload_filter` → `write_manager`) — no logic bug found; RX FIFO (2048B, barely over one MTU frame) suspected of overrunning under back-to-back full-size chunks from a fast PC NIC | Mitigated by dropping the default send chunk size 1472B → 512B with a small inter-chunk delay (root cause still open — needs a scope/ILA on the RX FIFO) |
 
+**Update:** later testing with the live-video script (`eth_video_live.py`,
+256×256 mode L) at full throttle — `--gap-ms 0 --chunk-size 1472`, i.e. the
+original unmitigated settings — sustained 29-32 FPS with no observed
+stalling. The RX-FIFO-overrun risk found above may be specific to sending
+one large image as a tight back-to-back burst rather than a hard limit that
+applies to every send pattern; still not scope/ILA-confirmed either way.
+
 ## Results — measured on real hardware
 
 Nexys A7, `FILTER_SEL = identity`, 256×256 grayscale image, 512-byte send

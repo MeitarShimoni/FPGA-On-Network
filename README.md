@@ -246,6 +246,16 @@ grayscale image, `--chunk-size 512`, 3 iterations):
   so neither signal reaches `Chip_Top_DSP_ETH_pipeline.sv` or any
   LED/counter. Wiring those two signals out is the prerequisite for safely
   tuning `--gap-ms`/`--chunk-size` down instead of guessing.
+  **Update:** `eth_video_live.py --width 256 --height 256 --mode L
+  --gap-ms 0 --chunk-size 1472` (i.e. no throttling at all) sustained
+  29-32 FPS over a full video with no observed stalling -- suggesting the
+  overrun risk found on `eth_bandwidth_test.py`'s single-image transfer may
+  be workload-dependent (one long back-to-back burst vs. video's
+  naturally-paced per-frame sends) rather than a hard FIFO limit that
+  always applies. This is one good run, not a scope/ILA-confirmed fix --
+  the conservative 512B/1ms default is left as-is pending `frame_dropped`/
+  `mac_reject` visibility, but untethered `1472`/`0ms` is now known to work
+  at least for continuous video streaming at this image size.
 - **`dst_mac` on TX is hardcoded** (`tx_ethernet.sv`) to one specific PC's
   NIC address — swapping test machines requires rebuilding the bitstream.
 - **`led1_green`/`led2_blue` may no longer light up**: both branches of

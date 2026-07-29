@@ -166,3 +166,18 @@ image at a time.
    same edit, `led1_green`/`led2_blue` started latching `1'b0` in both of
    their driving branches (previously `1'b1`) — worth confirming on
    hardware that this wasn't an unintentional regression.
+
+5. **Removing the send throttling entirely turned out to be fine, at least
+   for video streaming.** Ran `eth_video_live.py` with
+   `--width 256 --height 256 --mode L --gap-ms 0 --chunk-size 1472`
+   (i.e. full 1472B chunks, zero inter-chunk delay — the opposite of the
+   512B/1ms mitigation from the still-image bring-up above) and got a
+   sustained 29-32 FPS with no reported stalling or timeouts. This doesn't
+   necessarily contradict item 2's suspected RX-FIFO-overrun finding — that
+   was diagnosed on `eth_bandwidth_test.py` sending one 65536-byte image as
+   128 back-to-back chunks in a tight loop, whereas `eth_video_live.py`'s
+   per-frame send is naturally spaced out by decode/display work between
+   frames, which may be giving the FIFO enough time to drain even with
+   `--gap-ms 0`. Root cause is still unconfirmed (same `frame_dropped`/
+   `mac_reject` dead-end as before) — this is a "works for this workload"
+   data point, not a retraction of the original finding.

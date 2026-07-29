@@ -44,6 +44,15 @@ cause is most likely still in the RX chain (eth_frame_rx/mac_filter/
 eth_packet_fifo) and needs a scope/ILA to pin down further, not more
 Python-side tuning.
 
+Update: eth_video_live.py run with --gap-ms 0 --chunk-size 1472 (no
+throttling at all, 256x256 mode L) sustained 29-32 FPS with no observed
+stalling -- so the overrun above may be specific to this script's workload
+(one image sent as 128 back-to-back chunks in a tight loop) rather than a
+hard limit that applies to every send pattern. The 512/1ms default here is
+left unchanged pending a scope/ILA-confirmed root cause, but if you're
+chasing throughput on this script specifically, --gap-ms 0 --chunk-size
+1472 is worth trying rather than assuming it will stall.
+
 This is raw best-effort UDP (PC->FPGA) and raw best-effort Ethernet
 (FPGA->PC), with no sequence numbers in either direction (matching the
 FPGA's own protocol) -- dropped/reordered frames will corrupt or shorten

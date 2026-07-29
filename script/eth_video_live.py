@@ -30,6 +30,12 @@ Usage:
     # save the side-by-side comparison to a new video file
     python3 eth_video_live.py clip.mp4 --width 128 --height 128 \\
         --mode L --record compare.mp4
+
+    # untethered send (no PC-side throttling) -- sustained 29-32 FPS in
+    # testing at 256x256/mode L with no observed RX stalling; see the
+    # --gap-ms/--chunk-size help below before assuming this always works
+    python3 eth_video_live.py clip.mp4 --width 256 --height 256 \\
+        --mode L --gap-ms 0 --chunk-size 1472
 """
 import argparse
 import socket
@@ -325,7 +331,11 @@ def main():
     ap.add_argument("--target-port", type=int, default=DEFAULT_TARGET_PORT)
     ap.add_argument("--local-ip", default="0.0.0.0")
     ap.add_argument("--local-port", type=int, default=DEFAULT_LOCAL_PORT)
-    ap.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE)
+    ap.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE,
+                     help="bytes per UDP chunk sent to the FPGA (max 1472). Default is "
+                          "conservative to protect the FPGA's RX FIFO, but --gap-ms 0 "
+                          "--chunk-size 1472 has sustained 29-32 FPS at 256x256/mode L "
+                          "with no observed stalling -- worth trying if you want more FPS")
     ap.add_argument("--gap-ms", type=float, default=1.0,
                      help="delay between UDP chunks, to avoid bursting the FPGA's input FIFO")
     ap.add_argument("--frame-timeout", type=float, default=3.0,
