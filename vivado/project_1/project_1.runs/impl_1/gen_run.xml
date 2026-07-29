@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1785330663">
+  <File Type="PA-TCL" Name="Chip_Top_DSP_ETH_pipeline.tcl"/>
+  <File Type="REPORTS-TCL" Name="Chip_Top_DSP_ETH_pipeline_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="Chip_Top_DSP_ETH_pipeline_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Chip_Top_DSP_ETH_pipeline_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="Chip_Top_DSP_ETH_pipeline_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="Chip_Top_DSP_ETH_pipeline_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Chip_Top_DSP_ETH_pipeline_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Chip_Top_DSP_ETH_pipeline.hwdef"/>
+  <File Type="OPT-TIMING" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="Chip_Top_DSP_ETH_pipeline_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="Chip_Top_DSP_ETH_pipeline_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Chip_Top_DSP_ETH_pipeline_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Chip_Top_DSP_ETH_pipeline_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Chip_Top_DSP_ETH_pipeline_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Chip_Top_DSP_ETH_pipeline_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Chip_Top_DSP_ETH_pipeline_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Chip_Top_DSP_ETH_pipeline_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Chip_Top_DSP_ETH_pipeline_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Chip_Top_DSP_ETH_pipeline_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Chip_Top_DSP_ETH_pipeline_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="Chip_Top_DSP_ETH_pipeline_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Chip_Top_DSP_ETH_pipeline_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Chip_Top_DSP_ETH_pipeline_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Chip_Top_DSP_ETH_pipeline_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Chip_Top_DSP_ETH_pipeline_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Chip_Top_DSP_ETH_pipeline_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Chip_Top_DSP_ETH_pipeline_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="Chip_Top_DSP_ETH_pipeline_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="Chip_Top_DSP_ETH_pipeline_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Chip_Top_DSP_ETH_pipeline_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Chip_Top_DSP_ETH_pipeline_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Chip_Top_DSP_ETH_pipeline_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Chip_Top_DSP_ETH_pipeline_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Chip_Top_DSP_ETH_pipeline_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Chip_Top_DSP_ETH_pipeline_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Chip_Top_DSP_ETH_pipeline_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Chip_Top_DSP_ETH_pipeline_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Chip_Top_DSP_ETH_pipeline_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Chip_Top_DSP_ETH_pipeline_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Chip_Top_DSP_ETH_pipeline_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Chip_Top_DSP_ETH_pipeline_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Chip_Top_DSP_ETH_pipeline_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Chip_Top_DSP_ETH_pipeline_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Chip_Top_DSP_ETH_pipeline_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Chip_Top_DSP_ETH_pipeline_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="Chip_Top_DSP_ETH_pipeline_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Chip_Top_DSP_ETH_pipeline_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Chip_Top_DSP_ETH_pipeline_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Chip_Top_DSP_ETH_pipeline_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Chip_Top_DSP_ETH_pipeline_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Chip_Top_DSP_ETH_pipeline_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="Chip_Top_DSP_ETH_pipeline.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="Chip_Top_DSP_ETH_pipeline.ncr"/>
+  <File Type="BG-BIT" Name="Chip_Top_DSP_ETH_pipeline.bit"/>
+  <File Type="BG-XML" Name="Chip_Top_DSP_ETH_pipeline.xml"/>
+  <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
+  <File Type="BG-BIN" Name="Chip_Top_DSP_ETH_pipeline.bin"/>
+  <File Type="BITSTR-MSK" Name="Chip_Top_DSP_ETH_pipeline.msk"/>
+  <File Type="BITSTR-RBT" Name="Chip_Top_DSP_ETH_pipeline.rbt"/>
+  <File Type="BITSTR-NKY" Name="Chip_Top_DSP_ETH_pipeline.nky"/>
+  <File Type="BITSTR-BMM" Name="Chip_Top_DSP_ETH_pipeline_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Chip_Top_DSP_ETH_pipeline.mmi"/>
+  <File Type="PDI-FILE" Name="Chip_Top_DSP_ETH_pipeline.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="Chip_Top_DSP_ETH_pipeline_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="Chip_Top_DSP_ETH_pipeline_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="Chip_Top_DSP_ETH_pipeline.rcfi"/>
+  <File Type="CFI_FILE" Name="Chip_Top_DSP_ETH_pipeline.cfi"/>
+  <File Type="RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline.rnpi"/>
+  <File Type="RCDO-FILE" Name="Chip_Top_DSP_ETH_pipeline.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="Chip_Top_DSP_ETH_pipeline_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="Chip_Top_DSP_ETH_pipeline_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="Chip_Top_DSP_ETH_pipeline_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="Chip_Top_DSP_ETH_pipeline_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="Chip_Top_DSP_ETH_pipeline.npi"/>
+  <File Type="RBD_FILE" Name="Chip_Top_DSP_ETH_pipeline.rbd"/>
+  <File Type="MMI-FILE" Name="Chip_Top_DSP_ETH_pipeline.mmi"/>
+  <File Type="BIF-FILE" Name="Chip_Top_DSP_ETH_pipeline.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="Chip_Top_DSP_ETH_pipeline_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="Chip_Top_DSP_ETH_pipeline_pld.bif"/>
+  <File Type="LTX-FILE" Name="Chip_Top_DSP_ETH_pipeline.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="Chip_Top_DSP_ETH_pipeline_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="Chip_Top_DSP_ETH_pipeline_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Chip_Top_DSP_ETH_pipeline.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Chip_Top_DSP_ETH_pipeline.sysdef"/>
+  <File Type="BG-BGN" Name="Chip_Top_DSP_ETH_pipeline.bgn"/>
+  <File Type="BG-DRC" Name="Chip_Top_DSP_ETH_pipeline.drc"/>
+  <File Type="RDI-RDI" Name="Chip_Top_DSP_ETH_pipeline.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="Chip_Top_DSP_ETH_pipeline_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Chip_Top_DSP_ETH_pipeline_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../designs/dsp/imag_conv/ImageConv.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/display/clock_divider32.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../MyIPs/Ethernet_MAC/src/eth_frame_rx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../MyIPs/Ethernet_MAC/src/eth_frame_tx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../MyIPs/Ethernet_MAC/src/eth_packet_fifo.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth_udp_payload_filter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethernet_rx/ethernet_mac.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../MyIPs/Ethernet_MAC/src/mac_filter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/dsp/imag_conv/read_manager_dsp.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../MyIPs/Ethernet_MAC/src/rmii_rx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../MyIPs/Ethernet_MAC/src/rmii_tx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethernet_rx/rx_ethernet.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/display/seven_segmnet.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/FIFOs/sram_32bit.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/FIFOs/sram_to_uart_packet_manager.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethenet_tx/tx_ethernet.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/FIFOs/write_manager.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/dsp/imag_conv/write_manager_dsp.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/Chip_Top_DSP_ETH_pipeline.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethenet_tx/rmii_tx.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethernet_rx/rmii_rx.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethernet_rx/mac_filter.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethernet_rx/eth_packet_fifo.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethenet_tx/eth_frame_tx.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../designs/eth/ethernet_rx/eth_frame_rx.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Chip_Top_DSP_ETH_pipeline"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../designs/Nexys_A7_EthernetDSP.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2026"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

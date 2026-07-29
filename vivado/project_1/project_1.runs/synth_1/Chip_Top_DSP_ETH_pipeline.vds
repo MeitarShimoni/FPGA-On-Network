@@ -1,0 +1,529 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 29-jun-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Jul 29 16:11:04 2026
+# Process ID         : 33700
+# Current directory  : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/synth_1
+# Command line       : vivado.exe -log Chip_Top_DSP_ETH_pipeline.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Chip_Top_DSP_ETH_pipeline.tcl
+# Log file           : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/synth_1/Chip_Top_DSP_ETH_pipeline.vds
+# Journal file       : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-01CEMBL
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700F
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34163 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36311 MB
+# Available Virtual  : 12103 MB
+#-----------------------------------------------------------
+source Chip_Top_DSP_ETH_pipeline.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 592.551 ; gain = 272.207
+Command: synth_design -top Chip_Top_DSP_ETH_pipeline -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31228
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1378.406 ; gain = 577.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'frame_dropped', assumed default net type 'wire' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/ethernet_mac.sv:47]
+INFO: [Synth 8-11241] undeclared symbol 'mac_reject', assumed default net type 'wire' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/ethernet_mac.sv:48]
+WARNING: [Synth 8-11065] parameter 'PC_MAC_ADDR' becomes localparam in 'ethernet_mac' with formal parameter declaration list [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/ethernet_mac.sv:31]
+INFO: [Synth 8-11241] undeclared symbol 'clock_enable', assumed default net type 'wire' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/seven_segmnet.sv:12]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'led_arr' is not allowed [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Chip_Top_DSP_ETH_pipeline.sv:371]
+INFO: [Synth 8-6157] synthesizing module 'Chip_Top_DSP_ETH_pipeline' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Chip_Top_DSP_ETH_pipeline.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33700-DESKTOP-01CEMBL/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-33700-DESKTOP-01CEMBL/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117076]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117076]
+INFO: [Synth 8-6157] synthesizing module 'ethernet_mac' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/ethernet_mac.sv:1]
+	Parameter MAC_ADDR bound to: 48'b000000100000000000000000000000000000000000000001 
+	Parameter OUR_IP bound to: 32'b11000000101010000000000100000010 
+	Parameter LISTEN_PORT bound to: 16'b0001001110001000 
+	Parameter FIFO_DEPTH bound to: 32'sb00000000000000000000100000000000 
+INFO: [Synth 8-6157] synthesizing module 'rx_ethernet' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/rx_ethernet.sv:21]
+	Parameter MAC_ADDR bound to: 48'b000000100000000000000000000000000000000000000001 
+	Parameter FIFO_DEPTH bound to: 32'sb00000000000000000000100000000000 
+INFO: [Synth 8-6157] synthesizing module 'rmii_rx' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_rx.sv:21]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_rx.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'rmii_rx' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_rx.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_frame_rx' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'eth_frame_rx' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mac_filter' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/mac_filter.sv:24]
+	Parameter MAC_ADDR bound to: 48'b000000100000000000000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'mac_filter' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/mac_filter.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'eth_packet_fifo' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_packet_fifo.sv:17]
+	Parameter DEPTH bound to: 32'sb00000000000000000000100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_packet_fifo' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_packet_fifo.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'rx_ethernet' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/rx_ethernet.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'tx_ethernet' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethenet_tx/tx_ethernet.sv:22]
+	Parameter SRC_MAC bound to: 48'b000000100000000000000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'eth_frame_tx' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:28]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:101]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:127]
+INFO: [Synth 8-226] default block is never used [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:127]
+INFO: [Synth 8-6155] done synthesizing module 'eth_frame_tx' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'rmii_tx' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_tx.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'rmii_tx' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_tx.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'tx_ethernet' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethenet_tx/tx_ethernet.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_mac' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/ethernet_mac.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'eth_udp_payload_filter' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth_udp_payload_filter.sv:24]
+	Parameter OUR_IP bound to: 32'b11000000101010000000000100000010 
+	Parameter LISTEN_PORT bound to: 16'b0001001110001000 
+INFO: [Synth 8-6155] done synthesizing module 'eth_udp_payload_filter' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth_udp_payload_filter.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'write_manager' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/write_manager.sv:3]
+	Parameter TOTAL_PIXELS bound to: 32'sb00000000000000010000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'write_manager' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/write_manager.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sram_32bit' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/sram_32bit.sv:1]
+	Parameter ADDR_WIDTH bound to: 32'sb00000000000000000000000000010000 
+	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'sram_32bit' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/sram_32bit.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'read_manager_dsp' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/read_manager_dsp.sv:1]
+	Parameter TOTAL_PIXELS bound to: 32'sb00000000000000010000000000000000 
+	Parameter START_ADDR bound to: 8'b00000000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/read_manager_dsp.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'read_manager_dsp' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/read_manager_dsp.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ImageConv' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/ImageConv.sv:11]
+	Parameter IMAGE_SIZE bound to: 32'sb00000000000000000000000100000000 
+INFO: [Synth 8-226] default block is never used [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/ImageConv.sv:85]
+INFO: [Synth 8-226] default block is never used [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/ImageConv.sv:167]
+INFO: [Synth 8-6155] done synthesizing module 'ImageConv' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/ImageConv.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'write_manager_dsp' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/write_manager_dsp.sv:1]
+	Parameter TOTAL_PIXELS bound to: 32'sb00000000000000010000000000000000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/write_manager_dsp.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'write_manager_dsp' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/write_manager_dsp.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sram_to_uart_packet_manager' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/sram_to_uart_packet_manager.sv:32]
+	Parameter IMAGE_SIZE bound to: 32'sb00000000000000000000000100000000 
+	Parameter ADDR_WIDTH bound to: 32'sb00000000000000000000000000010000 
+	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000001000 
+INFO: [Synth 8-226] default block is never used [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/sram_to_uart_packet_manager.sv:84]
+INFO: [Synth 8-6155] done synthesizing module 'sram_to_uart_packet_manager' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/sram_to_uart_packet_manager.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/seven_segmnet.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider32' [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/clock_divider32.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider32' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/clock_divider32.sv:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/seven_segmnet.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/seven_segmnet.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Chip_Top_DSP_ETH_pipeline' (0#1) [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Chip_Top_DSP_ETH_pipeline.sv:46]
+WARNING: [Synth 8-7137] Register sh_reg in module rmii_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_rx.sv:79]
+WARNING: [Synth 8-7137] Register rx_data_reg in module rmii_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_rx.sv:97]
+WARNING: [Synth 8-7137] Register crc_reg in module eth_frame_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:99]
+WARNING: [Synth 8-7137] Register d0_reg in module eth_frame_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:117]
+WARNING: [Synth 8-7137] Register d1_reg in module eth_frame_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:118]
+WARNING: [Synth 8-7137] Register d2_reg in module eth_frame_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:119]
+WARNING: [Synth 8-7137] Register d3_reg in module eth_frame_rx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv:120]
+WARNING: [Synth 8-7137] Register dst_q_reg in module eth_frame_tx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:129]
+WARNING: [Synth 8-7137] Register src_q_reg in module eth_frame_tx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:130]
+WARNING: [Synth 8-7137] Register type_q_reg in module eth_frame_tx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv:131]
+WARNING: [Synth 8-7137] Register sh_reg in module rmii_tx has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_tx.sv:52]
+WARNING: [Synth 8-6014] Unused sequential element wen_reg was removed.  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/read_manager_dsp.sv:42]
+WARNING: [Synth 8-6014] Unused sequential element enable_reg was removed.  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/ImageConv.sv:135]
+WARNING: [Synth 8-7137] Register wr_addr_reg in module write_manager_dsp has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/write_manager_dsp.sv:48]
+WARNING: [Synth 8-6014] Unused sequential element pixel_in_counter_reg was removed.  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Chip_Top_DSP_ETH_pipeline.sv:347]
+WARNING: [Synth 8-6014] Unused sequential element pixel_out_counter_reg was removed.  [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Chip_Top_DSP_ETH_pipeline.sv:357]
+WARNING: [Synth 8-7129] Port out_ready in module ImageConv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1570.992 ; gain = 769.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1570.992 ; gain = 769.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1570.992 ; gain = 769.875
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1570.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk50_gen'
+Finished Parsing XDC File [c:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk50_gen'
+Parsing XDC File [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Nexys_A7_EthernetDSP.xdc]
+Finished Parsing XDC File [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Nexys_A7_EthernetDSP.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Nexys_A7_EthernetDSP.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Chip_Top_DSP_ETH_pipeline_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Chip_Top_DSP_ETH_pipeline_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1613.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1616.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1616.148 ; gain = 815.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1616.148 ; gain = 815.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1616.148 ; gain = 815.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'eth_frame_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'eth_frame_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'read_manager_dsp'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'ImageConv'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'write_manager_dsp'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sram_to_uart_packet_manager'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     PRE |                               01 |                               01
+                    DATA |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'eth_frame_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                     PRE |                              001 |                              001
+                     SFD |                              010 |                              010
+                     HDR |                              011 |                              011
+                     PAY |                              100 |                              100
+                     PAD |                              101 |                              101
+                     FCS |                              110 |                              110
+                     IFG |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'eth_frame_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                    READ |                               01 |                               01
+                    DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'read_manager_dsp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                    LOAD |                               11 |                               01
+                    CALC |                               10 |                               10
+                    DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'ImageConv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     RUN |                               01 |                               01
+                    DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'write_manager_dsp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+              FETCH_ADDR |                             0010 |                               01
+               READ_DATA |                             0100 |                               10
+                    SEND |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'sram_to_uart_packet_manager'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1616.148 ; gain = 815.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 8     
+	   9 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 18    
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 12    
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 792   
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 26    
++---RAMs : 
+	             512K Bit	(65536 X 8 bit)          RAMs := 2     
+	              18K Bit	(2048 X 9 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 18    
+	   3 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 7     
+	  10 Input   16 Bit        Muxes := 2     
+	   3 Input   16 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 3     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   8 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   4 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   8 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 18    
+	   3 Input    2 Bit        Muxes := 3     
+	   8 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 36    
+	   3 Input    1 Bit        Muxes := 15    
+	   7 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 7     
+	  10 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port out_ready in module ImageConv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1771.051 ; gain = 969.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ethernet_core             | u_rx/u_fifo/mem_reg   | 2 K x 9(READ_FIRST)    | W |   | 2 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Chip_Top_DSP_ETH_pipeline | sram_in_inst/mem_reg  | 64 K x 8(READ_FIRST)   | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
+|Chip_Top_DSP_ETH_pipeline | sram_out_inst/mem_reg | 64 K x 8(READ_FIRST)   | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
++--------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1775.715 ; gain = 974.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1791.484 ; gain = 990.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ethernet_core             | u_rx/u_fifo/mem_reg   | 2 K x 9(READ_FIRST)    | W |   | 2 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Chip_Top_DSP_ETH_pipeline | sram_in_inst/mem_reg  | 64 K x 8(READ_FIRST)   | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
+|Chip_Top_DSP_ETH_pipeline | sram_out_inst/mem_reg | 64 K x 8(READ_FIRST)   | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
++--------------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ethernet_core/u_rx/u_fifo/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_in_inst/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance sram_out_inst/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1810.594 ; gain = 1009.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2049.547 ; gain = 1248.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2049.547 ; gain = 1248.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2049.547 ; gain = 1248.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2049.547 ; gain = 1248.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2050.512 ; gain = 1249.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2050.512 ; gain = 1249.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name               | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Chip_Top_DSP_ETH_pipeline | Conv_Inst/line_buffer_1_reg[255][7] | 256    | 8     | YES          | NO                 | YES               | 0      | 64      | 
+|Chip_Top_DSP_ETH_pipeline | Conv_Inst/line_buffer_2_reg[255][7] | 256    | 8     | YES          | NO                 | YES               | 0      | 64      | 
+|Chip_Top_DSP_ETH_pipeline | Conv_Inst/line_buffer_3_reg[255][7] | 256    | 8     | YES          | NO                 | YES               | 0      | 64      | 
+|Chip_Top_DSP_ETH_pipeline | ethernet_core/u_rx/u_mac/d3_reg[7]  | 4      | 8     | NO           | NO                 | NO                | 8      | 0       | 
++--------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |CARRY4   |   110|
+|3     |LUT1     |    25|
+|4     |LUT2     |   228|
+|5     |LUT3     |   104|
+|6     |LUT4     |   172|
+|7     |LUT5     |   165|
+|8     |LUT6     |   233|
+|9     |ODDR     |     1|
+|10    |RAMB18E1 |     1|
+|11    |RAMB36E1 |    32|
+|13    |SRL16E   |     8|
+|14    |SRLC32E  |   192|
+|15    |FDCE     |   844|
+|16    |FDPE     |    13|
+|17    |FDRE     |    64|
+|18    |FDSE     |    32|
+|19    |IBUF     |     8|
+|20    |OBUF     |    38|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2050.512 ; gain = 1249.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 2050.512 ; gain = 1204.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2050.512 ; gain = 1249.395
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2050.512 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2063.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fc9d8e9d
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+103 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2063.402 ; gain = 1458.141
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2063.402 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/synth_1/Chip_Top_DSP_ETH_pipeline.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Chip_Top_DSP_ETH_pipeline_utilization_synth.rpt -pb Chip_Top_DSP_ETH_pipeline_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 16:11:53 2026...

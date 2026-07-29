@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Jul 23 21:56:14 2026
+# Process ID         : 34872
+# Current directory  : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.sim/sim_1/behav/xsim
+# Command line       : xsim.exe -log sim_headless.log -mode tcl -source {xsim.dir/tb_chip_top_eth_behav/xsim_script.tcl}
+# Log file           : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.sim/sim_1/behav/xsim/sim_headless.log
+# Journal file       : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.sim/sim_1/behav/xsim\xsim.jou
+# Running On         : DESKTOP-01CEMBL
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700F
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34163 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36311 MB
+# Available Virtual  : 16588 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_chip_top_eth_behav/xsim_script.tcl
+# xsim {tb_chip_top_eth_behav} -autoloadwcfg -tclbatch {run_batch.tcl}
+Time resolution is 1 ps
+source run_batch.tcl
+## run 5ms
+[TB] PLL locked, PHY reset released, link ready
+[TB] Loaded 4096 bytes from C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/verification/image_payload.bin
+[TB] Sending frame 0: offset=0 len=1472
+[TB] Sending frame 1: offset=1472 len=1472
+[TB] Sending frame 2: offset=2944 len=1152
+[TB] Done. Sent 3 frame(s) for 4096 total bytes.
+--------------------------------------------------
+[TB] Sent bytes            : 4096
+[TB] Frames decoded        : 3
+[TB] Captured bytes (MAC)  : 4222 (expected 4222 = payload + 42 hdr bytes/frame)
+[TB] Pixels into SRAM      : 4096 (post udp_filter)
+[TB] Pixel mismatches      : 0 (over 4096 compared)
+[TB] frame_done pulses     : 1
+[TB] calc_done pulses      : 1
+[TB] RESULT: PASS - all pixels reached SRAM and convolution completed
+--------------------------------------------------
+[TB] Wrote captured_image.bin (4222 bytes) -- reconstruct with view_captured_image.py
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:31 . Memory (MB): peak = 238.621 ; gain = 0.000
+## quit
+INFO: xsimkernel Simulation Memory Usage: 21444 KB (Peak: 21444 KB), Simulation CPU Usage: 29750 ms
+INFO: [Common 17-206] Exiting xsim at Thu Jul 23 21:56:46 2026...

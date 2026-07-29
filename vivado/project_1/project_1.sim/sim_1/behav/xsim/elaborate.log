@@ -1,0 +1,41 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_chip_top_eth_behav xil_defaultlib.tb_chip_top_eth xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module xil_defaultlib.rmii_rx
+Compiling module xil_defaultlib.eth_frame_rx
+Compiling module xil_defaultlib.mac_filter
+Compiling module xil_defaultlib.eth_packet_fifo_default
+Compiling module xil_defaultlib.rx_ethernet
+Compiling module xil_defaultlib.eth_frame_tx
+Compiling module xil_defaultlib.rmii_tx
+Compiling module xil_defaultlib.tx_ethernet
+Compiling module xil_defaultlib.ethernet_mac
+Compiling module xil_defaultlib.eth_udp_payload_filter
+Compiling module xil_defaultlib.write_manager(TOTAL_PIXELS=4096)
+Compiling module xil_defaultlib.sram_32bit(ADDR_WIDTH=16,DATA_WI...
+Compiling module xil_defaultlib.read_manager_dsp(TOTAL_PIXELS=40...
+Compiling module xil_defaultlib.ImageConv(IMAGE_SIZE=64)
+Compiling module xil_defaultlib.write_manager_dsp(TOTAL_PIXELS=4...
+Compiling module xil_defaultlib.sram_to_uart_packet_manager(IMAG...
+Compiling module xil_defaultlib.clock_divider32
+Compiling module xil_defaultlib.seven_segment
+Compiling module xil_defaultlib.Chip_Top_DSP_ETH_pipeline(PHY_RS...
+Compiling module xil_defaultlib.tb_chip_top_eth
+WARNING: [XSIM 43-3373] "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/verification/tb_chip_top_eth.sv" Line 322. System function $fseek is used as system task. This system function should have a LHS e.g. x=$fseek().
+WARNING: [XSIM 43-3373] "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/verification/tb_chip_top_eth.sv" Line 326. System function $fseek is used as system task. This system function should have a LHS e.g. x=$fseek().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_chip_top_eth_behav

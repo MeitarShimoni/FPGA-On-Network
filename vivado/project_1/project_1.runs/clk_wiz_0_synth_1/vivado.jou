@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Jul 23 20:54:01 2026
+# Process ID         : 12976
+# Current directory  : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/clk_wiz_0_synth_1
+# Command line       : vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file           : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file       : C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/vivado/project_1/project_1.runs/clk_wiz_0_synth_1\vivado.jou
+# Running On         : DESKTOP-01CEMBL
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700F
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34163 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36311 MB
+# Available Virtual  : 15244 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

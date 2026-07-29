@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../../project_1.ip_user_files/ipstatic" \
+"../../../../project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+sv xil_defaultlib  --include "../../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../../project_1.ip_user_files/ipstatic" \
+"../../../../../../designs/Chip_Top_DSP_ETH_pipeline.sv" \
+"../../../../../../designs/dsp/imag_conv/ImageConv.sv" \
+"../../../../../../designs/display/clock_divider32.sv" \
+"../../../../../../../MyIPs/Ethernet_MAC/src/eth_frame_rx.sv" \
+"../../../../../../../MyIPs/Ethernet_MAC/src/eth_frame_tx.sv" \
+"../../../../../../designs/eth_udp_payload_filter.sv" \
+"../../../../../../designs/eth/ethernet_rx/ethernet_mac.sv" \
+"../../../../../../../MyIPs/Ethernet_MAC/src/mac_filter.sv" \
+"../../../../../../designs/dsp/imag_conv/read_manager_dsp.sv" \
+"../../../../../../../MyIPs/Ethernet_MAC/src/rmii_rx.sv" \
+"../../../../../../../MyIPs/Ethernet_MAC/src/rmii_tx.sv" \
+"../../../../../../designs/eth/ethernet_rx/rx_ethernet.sv" \
+"../../../../../../designs/display/seven_segmnet.sv" \
+"../../../../../../designs/FIFOs/sram_32bit.sv" \
+"../../../../../../designs/FIFOs/sram_to_uart_packet_manager.sv" \
+"../../../../../../designs/eth/ethenet_tx/tx_ethernet.sv" \
+"../../../../../../designs/FIFOs/write_manager.sv" \
+"../../../../../../designs/dsp/imag_conv/write_manager_dsp.sv" \
+"../../../../../../verification/tb_chip_top_eth.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

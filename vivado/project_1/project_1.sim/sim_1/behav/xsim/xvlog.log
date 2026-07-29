@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/Chip_Top_DSP_ETH_pipeline.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Chip_Top_DSP_ETH_pipeline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/ImageConv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImageConv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/clock_divider32.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_frame_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/eth_frame_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_frame_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth_udp_payload_filter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_udp_payload_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/ethernet_mac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ethernet_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/mac_filter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/read_manager_dsp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_manager_dsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rmii_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/MyIPs/Ethernet_MAC/src/rmii_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rmii_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethernet_rx/rx_ethernet.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_ethernet
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/display/seven_segmnet.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/sram_32bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_32bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/sram_to_uart_packet_manager.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_to_uart_packet_manager
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/eth/ethenet_tx/tx_ethernet.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_ethernet
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/FIFOs/write_manager.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_manager
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/designs/dsp/imag_conv/write_manager_dsp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_manager_dsp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Meitar Shimoni/Desktop/FPGA Design/ETH_DSP/verification/tb_chip_top_eth.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_chip_top_eth

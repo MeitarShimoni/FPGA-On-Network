@@ -1,0 +1,25 @@
+sv xpm -i "../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../project_1.gen/sources_1/ip/clk_wiz_0" \
+"C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../project_1.gen/sources_1/ip/clk_wiz_0" \
+"../../../project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+sv xil_defaultlib -i "../../../../../../../../../../AMDDesignTools/2026.1/Vivado/data/rsb/busdef" --include "../../../project_1.gen/sources_1/ip/clk_wiz_0" \
+"../../../../../designs/display/clock_divider32.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/eth_frame_rx.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/eth_frame_tx.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/eth_packet_fifo.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/ethernet_mac.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/mac_filter.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/rmii_rx.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/rmii_tx.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/rx_ethernet.sv" \
+"../../../../../designs/display/seven_segmnet.sv" \
+"../../../../../../MyIPs/Ethernet_MAC/src/tx_ethernet.sv" \
+"../../../../../designs/Chip_Top_DSP_ETH.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Jul 29 16:12:52 2026
+| Host         : DESKTOP-01CEMBL running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file Chip_Top_DSP_ETH_pipeline_bus_skew_routed.rpt -pb Chip_Top_DSP_ETH_pipeline_bus_skew_routed.pb -rpx Chip_Top_DSP_ETH_pipeline_bus_skew_routed.rpx
+| Design       : Chip_Top_DSP_ETH_pipeline
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_chip_top_eth_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_chip_top_eth" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="47.000001 us"></ZoomEndTime>
+      <Cursor1Time time="129.134412 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="127"></NameColumnWidth>
+      <ValueColumnWidth column_width="61"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_chip_top_eth/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/eth_refclk" type="logic">
+      <obj_property name="ElementShortName">eth_refclk</obj_property>
+      <obj_property name="ObjectShortName">eth_refclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/eth_rstn" type="logic">
+      <obj_property name="ElementShortName">eth_rstn</obj_property>
+      <obj_property name="ObjectShortName">eth_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="group23" type="group">
+      <obj_property name="label">RMII</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_chip_top_eth/rmii_rxd" type="array">
+         <obj_property name="ElementShortName">rmii_rxd[1:0]</obj_property>
+         <obj_property name="ObjectShortName">rmii_rxd[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/rmii_crs_dv" type="logic">
+         <obj_property name="ElementShortName">rmii_crs_dv</obj_property>
+         <obj_property name="ObjectShortName">rmii_crs_dv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/u_rx/u_rmii/rx_data" type="array">
+         <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/u_rx/u_rmii/rx_valid" type="logic">
+         <obj_property name="ElementShortName">rx_valid</obj_property>
+         <obj_property name="ObjectShortName">rx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/rmii_txd" type="array">
+         <obj_property name="ElementShortName">rmii_txd[1:0]</obj_property>
+         <obj_property name="ObjectShortName">rmii_txd[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/rmii_tx_en" type="logic">
+         <obj_property name="ElementShortName">rmii_tx_en</obj_property>
+         <obj_property name="ObjectShortName">rmii_tx_en</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group28" type="group">
+      <obj_property name="label">Ethenet_Core</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/last_in" type="logic">
+         <obj_property name="ElementShortName">last_in</obj_property>
+         <obj_property name="ObjectShortName">last_in</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/valid_in" type="logic">
+         <obj_property name="ElementShortName">valid_in</obj_property>
+         <obj_property name="ObjectShortName">valid_in</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/ready_in" type="logic">
+         <obj_property name="ElementShortName">ready_in</obj_property>
+         <obj_property name="ObjectShortName">ready_in</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/u_rx/u_mac/state" type="array">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group84" type="group">
+         <obj_property name="label">FIFO RX</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/u_rx/u_fifo/wr_ptr" type="array">
+            <obj_property name="ElementShortName">wr_ptr[11:0]</obj_property>
+            <obj_property name="ObjectShortName">wr_ptr[11:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/u_rx/u_fifo/rd_data" type="array">
+            <obj_property name="ElementShortName">rd_data[7:0]</obj_property>
+            <obj_property name="ObjectShortName">rd_data[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/u_rx/u_fifo/rd_valid" type="logic">
+            <obj_property name="ElementShortName">rd_valid</obj_property>
+            <obj_property name="ObjectShortName">rd_valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/u_rx/u_fifo/wr_ptr" type="array">
+            <obj_property name="ElementShortName">wr_ptr[11:0]</obj_property>
+            <obj_property name="ObjectShortName">wr_ptr[11:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/valid_out" type="logic">
+         <obj_property name="ElementShortName">valid_out</obj_property>
+         <obj_property name="ObjectShortName">valid_out</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/last_out" type="logic">
+         <obj_property name="ElementShortName">last_out</obj_property>
+         <obj_property name="ObjectShortName">last_out</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/ethernet_core/ready_out" type="logic">
+         <obj_property name="ElementShortName">ready_out</obj_property>
+         <obj_property name="ObjectShortName">ready_out</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/dut/pixel_data" type="array">
+      <obj_property name="ElementShortName">pixel_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/dut/pixel_valid" type="logic">
+      <obj_property name="ElementShortName">pixel_valid</obj_property>
+      <obj_property name="ObjectShortName">pixel_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/dut/pixel_in_counter" type="array">
+      <obj_property name="ElementShortName">pixel_in_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in_counter[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group69" type="group">
+      <obj_property name="label">SRAM IN</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_in_inst/waddr" type="array">
+         <obj_property name="ElementShortName">waddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">waddr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_in_inst/din" type="array">
+         <obj_property name="ElementShortName">din[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_in_inst/raddr" type="array">
+         <obj_property name="ElementShortName">raddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_in_inst/dout" type="array">
+         <obj_property name="ElementShortName">dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group74" type="group">
+      <obj_property name="label">DSP READ</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_chip_top_eth/dut/read_manager_dsp_inst/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/read_manager_dsp_inst/valid_out" type="logic">
+         <obj_property name="ElementShortName">valid_out</obj_property>
+         <obj_property name="ObjectShortName">valid_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/read_manager_dsp_inst/ready_out" type="logic">
+         <obj_property name="ElementShortName">ready_out</obj_property>
+         <obj_property name="ObjectShortName">ready_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/read_manager_dsp_inst/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group82" type="group">
+      <obj_property name="label">CONV CORE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_chip_top_eth/dut/Conv_Inst/in_valid" type="logic">
+         <obj_property name="ElementShortName">in_valid</obj_property>
+         <obj_property name="ObjectShortName">in_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/Conv_Inst/in_ready" type="logic">
+         <obj_property name="ElementShortName">in_ready</obj_property>
+         <obj_property name="ObjectShortName">in_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/Conv_Inst/pixel_in" type="array">
+         <obj_property name="ElementShortName">pixel_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pixel_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/Conv_Inst/out_valid" type="logic">
+         <obj_property name="ElementShortName">out_valid</obj_property>
+         <obj_property name="ObjectShortName">out_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/Conv_Inst/out_ready" type="logic">
+         <obj_property name="ElementShortName">out_ready</obj_property>
+         <obj_property name="ObjectShortName">out_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/Conv_Inst/pixel_out" type="array">
+         <obj_property name="ElementShortName">pixel_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pixel_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/Conv_Inst/calc_done" type="logic">
+         <obj_property name="ElementShortName">calc_done</obj_property>
+         <obj_property name="ObjectShortName">calc_done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group87" type="group">
+      <obj_property name="label">SRAM OUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_out_inst/waddr" type="array">
+         <obj_property name="ElementShortName">waddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">waddr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_out_inst/din" type="array">
+         <obj_property name="ElementShortName">din[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_out_inst/raddr" type="array">
+         <obj_property name="ElementShortName">raddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_chip_top_eth/dut/sram_out_inst/dout" type="array">
+         <obj_property name="ElementShortName">dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/dut/pixel_in_counter" type="array">
+      <obj_property name="ElementShortName">pixel_in_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in_counter[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_chip_top_eth/dut/pixel_out_counter" type="array">
+      <obj_property name="ElementShortName">pixel_out_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_out_counter[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
