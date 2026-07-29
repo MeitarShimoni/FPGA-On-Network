@@ -102,11 +102,11 @@
         <mxCell id="wjOGGnuaNjHJ6GK1KIU0-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CONV" vertex="1">
           <mxGeometry height="120" width="80" x="720" y="1360" as="geometry" />
         </mxCell>
-        <mxCell id="wjOGGnuaNjHJ6GK1KIU0-46" edge="1" parent="1" source="wjOGGnuaNjHJ6GK1KIU0-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="wjOGGnuaNjHJ6GK1KIU0-28">
+        <mxCell id="wjOGGnuaNjHJ6GK1KIU0-46" edge="1" parent="1" source="wjOGGnuaNjHJ6GK1KIU0-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="wjOGGnuaNjHJ6GK1KIU0-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wjOGGnuaNjHJ6GK1KIU0-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RD&amp;nbsp;&lt;br&gt;Manager" vertex="1">
-          <mxGeometry height="120" width="80" x="360" y="1480" as="geometry" />
+          <mxGeometry height="120" width="80" x="370" y="1480" as="geometry" />
         </mxCell>
         <mxCell id="wjOGGnuaNjHJ6GK1KIU0-44" edge="1" parent="1" source="wjOGGnuaNjHJ6GK1KIU0-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="wjOGGnuaNjHJ6GK1KIU0-37">
           <mxGeometry relative="1" as="geometry" />
@@ -119,6 +119,15 @@
         </mxCell>
         <mxCell id="wjOGGnuaNjHJ6GK1KIU0-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SRAM" vertex="1">
           <mxGeometry height="120" width="80" x="480" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="wjOGGnuaNjHJ6GK1KIU0-48" edge="1" parent="1" source="wjOGGnuaNjHJ6GK1KIU0-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="wjOGGnuaNjHJ6GK1KIU0-47" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="1510" as="sourcePoint" />
+            <mxPoint x="160" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wjOGGnuaNjHJ6GK1KIU0-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UDP Composer" vertex="1">
+          <mxGeometry height="120" width="80" x="240" y="1480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
