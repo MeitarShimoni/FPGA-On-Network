@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1785330663">
-  <File Type="PA-TCL" Name="Chip_Top_DSP_ETH_pipeline.tcl"/>
   <File Type="REPORTS-TCL" Name="Chip_Top_DSP_ETH_pipeline_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Chip_Top_DSP_ETH_pipeline.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="Chip_Top_DSP_ETH_pipeline_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="Chip_Top_DSP_ETH_pipeline_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Chip_Top_DSP_ETH_pipeline_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="Chip_Top_DSP_ETH_pipeline.tcl"/>
+  <File Type="RDS-RDS" Name="Chip_Top_DSP_ETH_pipeline.vds"/>
   <File Type="RDS-DCP" Name="Chip_Top_DSP_ETH_pipeline.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Chip_Top_DSP_ETH_pipeline_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../designs/dsp/imag_conv/ImageConv.sv">

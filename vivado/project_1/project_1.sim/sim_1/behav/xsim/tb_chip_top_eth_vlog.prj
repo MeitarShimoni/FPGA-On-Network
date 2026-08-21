@@ -9,6 +9,7 @@ sv xil_defaultlib  --include "../../../../../../../../../../../AMDDesignTools/20
 "../../../../../../designs/display/clock_divider32.sv" \
 "../../../../../../../MyIPs/Ethernet_MAC/src/eth_frame_rx.sv" \
 "../../../../../../../MyIPs/Ethernet_MAC/src/eth_frame_tx.sv" \
+"../../../../../../../MyIPs/Ethernet_MAC/src/eth_packet_fifo.sv" \
 "../../../../../../designs/eth_udp_payload_filter.sv" \
 "../../../../../../designs/eth/ethernet_rx/ethernet_mac.sv" \
 "../../../../../../../MyIPs/Ethernet_MAC/src/mac_filter.sv" \
